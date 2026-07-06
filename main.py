@@ -1,35 +1,15 @@
-questions = {
-    "What is the capital of France?": "Paris",
-    "What is 2 + 2?": "4",
-    "What is the largest ocean?": "Pacific",
-    "What is the currency of Japan?": "Yen",
-    "What is the tallest mountain in the world?": "Everest",
-    "What is the largest planet in our solar system?": "Jupiter",
-    "What is the chemical symbol for gold?": "Au",
-    "What is the hardest natural substance on Earth?": "Diamond",
-    "What is the longest river in the world?": "Nile",
-    "What is the largest mammal in the world?": "Blue Whale",
-    "What is the capital of Australia?": "Canberra",
-    "What is the smallest country in the world?": "Vatican City",
-    "What is the largest desert in the world?": "Sahara",
-    "What is the capital of Brazil?": "Brasília",
-    "What is the largest lake in the world?": "Caspian Sea",
-    "What is the capital of Canada?": "Ottawa",
-    "What is the largest island in the world?": "Greenland",
-    "What is the capital of India?": "New Delhi",
-    "What is the largest bone in the human body?": "Femur",
-    "What is the capital of Germany?": "Berlin"
-}
-
-  
-  
-def play_game():
-    score = 0
-    i =0
-    for question, answer in questions.items():
-        print(question)
-        user_answer = input("Your answer: ")
-        if user_answer == answer:
+QUESTIONS = [
+    {"q": "Which planet is known as the Red Planet?", "options": ["Earth", "Mars", "Jupiter", "Venus"], "answer": 1, "money": 100},
+    {"q": "What is the capital of France?", "options": ["Berlin", "London", "Paris", "Madrid"], "answer": 2, "money": 200},
+    {"q": "Which element has the chemical symbol O?", "options": ["Gold", "Oxygen", "Silver", "Iron"], "answer": 1, "money": 500},
+    {"q": "Who wrote 'Romeo and Juliet'?", "options": ["Charles Dickens", "Mark Twain", "William Shakespeare", "Jane Austen"], "answer": 2, "money": 1000},
+    {"q": "What is 8 * 7?", "options": ["54", "56", "58", "64"], "answer": 1, "money": 2000},
+    {"q": "What is the largest ocean on Earth?", "options": ["Atlantic", "Indian", "Arctic", "Pacific"], "answer": 3, "money": 4000},
+    {"q": "Which language is primarily used for Android app development?", "options": ["Swift", "Kotlin", "Ruby", "Go"], "answer": 1, "money": 8000},
+    {"q": "Which year did the first man land on the moon?", "options": ["1965", "1969", "1972", "1959"], "answer": 1, "money": 16000},
+    {"q": "What is the chemical formula for water?", "options": ["CO2", "H2O", "O2", "NaCl"], "answer": 1, "money": 32000},
+    {"q": "Which country is home to the Great Barrier Reef?", "options": ["Australia", "USA", "South Africa", "India"], "answer": 0, "money": 64000},
+]
             print("Correct!")
             score += 1
         else:
